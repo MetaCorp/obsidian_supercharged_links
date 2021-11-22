@@ -67,7 +67,6 @@ function setLinkNewProps(link: HTMLElement, new_props: Record<string, string>) {
     link.setAttribute("data-link-" + key, new_props[key]);
 
     if (key === "img_url") {
-      console.log("setLinkNewProps :", { key, new_props, npk: new_props[key] });
       link.style.setProperty("--bg-img", `url('${new_props[key]}')`);
     }
   });
